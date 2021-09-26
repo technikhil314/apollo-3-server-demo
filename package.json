@@ -1,0 +1,27 @@
+{
+  "name": "apollo-3-server-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:gateway": "nodemon ./gateway.js",
+    "start:gqlServer1": "nodemon ./gqlServer1.js",
+    "start:gqlServer2": "nodemon ./gqlServer2.js",
+    "dev": "concurrently npm:start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-personal:technikhil314/apollo-3-server-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/federation": "^0.33.0",
+    "@apollo/gateway": "^0.42.0",
+    "apollo-server": "^3.3.0",
+    "concurrently": "^6.2.1",
+    "graphql": "^15.5.3",
+    "nodemon": "^2.0.13"
+  }
+}
